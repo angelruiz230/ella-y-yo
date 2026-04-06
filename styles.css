@@ -61,3 +61,19 @@ button:hover {
     color: #ff4081;
     font-weight: bold;
 }
+.foto {
+     width: 150px !important; 
+    height: 150px !important;
+    
+    /* Para que no se estire feo si la foto original es rectangular */
+    object-fit: cover; 
+    
+    /* Para centrarla dentro de la tarjeta */
+    display: block;
+    margin: 0 auto 1rem auto; 
+    
+    /* Opcional: Hacerla circular para que se vea más como de perfil */
+    border-radius: 50%; 
+    border: 3px solid #ff4081; /* Un pequeño borde rosa */
+
+}
