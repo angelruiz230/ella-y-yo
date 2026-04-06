@@ -1,0 +1,63 @@
+body {
+    background-color: #fce4ec; /* Un tono rosado suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+.profile-img {
+    /* Usamos !important solo para probar si hay un conflicto de reglas */
+    width: 150px !important; 
+    height: 150px !important;
+    
+    /* Para que no se estire feo si la foto original es rectangular */
+    object-fit: cover; 
+    
+    /* Para centrarla dentro de la tarjeta */
+    display: block;
+    margin: 0 auto 1rem auto; 
+    
+    /* Opcional: Hacerla circular para que se vea más como de perfil */
+    border-radius: 50%; 
+    border: 3px solid #ff4081; /* Un pequeño borde rosa */
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    margin-top: 1rem;
+    color: #ff4081;
+    font-weight: bold;
+}
