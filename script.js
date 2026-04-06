@@ -5,7 +5,7 @@ function mostrarMensaje() {
 }
 
 // Lógica para contar los días (Ajusta la fecha a la suya)
-const fechaInicio = new Date('2026-03-21'); // Año-Mes-Día
+const fechaInicio = new Date('2024-11-22'); // Año-Mes-Día
 
 function actualizarContador() {
     const ahora = new Date();
